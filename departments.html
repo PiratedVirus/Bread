@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <title>Counting</title>
+    <link rel="stylesheet" href="../Assets/Css/Base.css">
+  </head>
+  <body>
+    <header>
+      <div class="sec-nav">
+        <div id="nav-wide" class="container-fluid">
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#col" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"> </span></button>
+            </div><a href="#" class="navbar-brand">College</a>
+            <div id="col" class="collapse navbar-collapse">
+              <ul id="nav-sec" class="nav navbar-nav navbar-right">
+                <li><a href="#" class="hvr-underline-from-center">Departments</a></li>
+                <li><a href="#about-us" class="hvr-underline-from-center">About Us</a></li>
+                <li><a href="#contact-us" class="hvr-underline-from-center">Contact Us</a></li>
+                <li><a href="#" class="hvr-underline-from-center">Hire Us</a></li>
+                <li><a href="#" class="hvr-underline-from-center">Buy Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <h1 class="text-center"><span id="header">Computer Rocks</span></h1>
+    </header>
+    <section id="charts">
+      <div class="container-fluid">
+        <div class="chart-holder">
+          <div style="width:350px" class="col-md-6 col-xs-12 chart-holder-right">
+            <div class="canvas-holder text-center">
+              <canvas id="cs-chart-right" width="40px" height="40px"></canvas>
+              <div data-from="0" data-to="57" data-speed="2000" data-refresh-interval="10" class="canvas-per-right timer timer"></div>
+              <div class="sub-caption-right text-center"> Lorem ipsum.</div>
+            </div>
+          </div>
+          <div style="width:350px" class="col-md-6 col-xs-12 chart-holder-left">
+            <div class="canvas-holder text-center">
+              <canvas id="cs-chart-left" width="40px" height="40px"></canvas>
+              <div data-from="0" data-to="85" data-speed="2000" data-refresh-interval="10" class="canvas-per-left timer timer"></div>
+              <div class="sub-caption-right text-center"> Lorem ipsum.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="dep-staff" class="clearfix">
+      <div class="container">
+        <div class="sub-header">Staff</div>
+        <div class="hod col-md-4 col-xs-12 text-center"><img src="../Assets/Img/user.jpg">
+          <div class="hod-name text-center">Lorem Dolor</div>
+          <div class="hod-post text-center">HOD</div>
+        </div>
+        <div class="prof col-md-8 col-xs-12 text-center">
+          <div class="prof-mem text-center col-xs-6 col-md-4"><b>Lorem Iosum</b><br>AB</div>
+          <div class="prof-mem text-center col-xs-6 col-md-4"><b>Lorem Iosum</b><br>AB</div>
+          <div class="prof-mem text-center col-xs-6 col-md-4"><b>Lorem Iosum</b><br>AB</div>
+          <div class="prof-mem text-center col-xs-6 col-md-4"><b>Lorem Iosum</b><br>AB</div>
+          <div class="prof-mem text-center col-xs-6 col-md-4"><b>Lorem Iosum</b><br>AB</div>
+          <div class="prof-mem text-center col-xs-6 col-md-4"><b>Lorem Iosum</b><br>AB</div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="container">
+        <div class="sub-header text-center">Gallery</div>
+        <div class="your-class">
+          <div><img src="../Assets/Img/blur.jpg" height="350px" width="500px"></div>    
+          <div><img src="../Assets/Img/coding.jpg" height="350px" width="500px"></div>    
+          <div><img src="../Assets/Img/pagesource.jpg" height="350px" width="500px"></div>    
+          <div><img src="../Assets/Img/library.jpg" height="350px" width="500px"></div>    
+          <div><img src="../Assets/Img/coding.jpg" height="350px" width="500px"></div>    
+          <div><img src="../Assets/Img/pagesource.jpg" height="350px" width="500px"></div>    
+          <div><img src="../Assets/Img/library.jpg" height="350px" width="500px"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="col-lg-5 col-xs-12">
+          <div class="footer-head text-left"><a href="Bread.html">Lorem</a></div>
+          <div class="footer-cr">&copy; Copyright 2016<br>All Rights Reserved.</div>
+        </div>
+        <div class="col-lg-7 col-xs-12 text-left">
+          <div class="footer-nav"><a href="#" class="foot-nav">About</a><a href="#" class="foot-nav">Departments</a><a href="#" class="foot-nav">Contact </a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../Assets/Scripts/1-libraries/jquery2.min.js"></script>
+  <script src="../Assets/Scripts/1-libraries/jquery.countTo.js"></script>
+  <script src="../Assets/Scripts/1-libraries/bootstrap.min.js"></script>
+  <script src="../Assets/Scripts/1-libraries/Chart.min.js"></script>
+  <script src="../Assets/Scripts/1-libraries/slick.js"></script>
+  <script src="../Assets/Scripts/functions.js"></script>
+  <script>$('.timer').countTo();</script>
+</html>

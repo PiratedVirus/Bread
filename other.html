@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <title>Counting</title>
+    <link rel="stylesheet" href="../Assets/Css/Base.css">
+  </head>
+  <body>
+    <header style="background-image:url(../Assets/Img/bg_lib.png)">
+      <div class="sec-nav">
+        <div id="nav-wide" class="container-fluid">
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#col" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"> </span></button>
+            </div><a href="#" style="color:#fff" class="navbar-brand">College</a>
+            <div id="col" class="collapse navbar-collapse">
+              <ul id="nav-sec" class="nav navbar-nav navbar-right">
+                <li><a href="#" class="hvr-underline-from-center">Departments</a></li>
+                <li><a href="#about-us" class="hvr-underline-from-center">About Us</a></li>
+                <li><a href="#contact-us" class="hvr-underline-from-center">Contact Us</a></li>
+                <li><a href="#" class="hvr-underline-from-center">Hire Us</a></li>
+                <li><a href="#" class="hvr-underline-from-center">Buy Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <h1 class="text-center"><span id="lib" style="color:#fff">Library</span></h1>
+    </header>
+    <section id="charts-lib">
+      <div class="container-fluid text-center">
+        <div class="canvas-holder col-xs-12">
+          <canvas id="myChart" height="400" width="400"></canvas>
+          <div data-from="0" data-to="986" data-speed="2000" data-refresh-interval="10" class="book-no timer timer"></div>
+          <div class="total text-center">Total Books</div>
+        </div>
+      </div>
+      <div class="container-fluid text-center lab">
+        <div class="tabs-hor col-xs-12">
+          <ul role="tablist" class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="home" role="tabpanel" class="tab-pane active"> Lorem ipsum dolor sit.<br>
+              <p class="amount">
+                 
+                ₹ 20,000
+              </p>
+            </div>
+            <div id="profile" role="tabpanel" class="tab-pane"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint, illum obcaecati exercitationem aspernatur qui officia autem, iste itaque tenetur, adipisci nobis debitis libero nihil! Ullam aliquam dolor repudiandae, neque. Enim quisquam eius ea.<br>
+              <p class="amount">
+                 
+                ₹ 20,000
+              </p>
+            </div>
+            <div id="messages" role="tabpanel" class="tab-pane"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsam iusto error.<br>
+              <p class="amount">
+                 
+                ₹ 20,000
+              </p>
+            </div>
+            <div id="settings" role="tabpanel" class="tab-pane"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi eius, ratione delectus ullam nam maxime odio veritatis ducimus eaque, alias voluptate et animi excepturi ab blanditiis error ipsam dolore deleniti beatae harum adipisci. Doloremque dolorum esse dolore, nostrum labore iusto incidunt rem dolores iste pariatur hic quae nihil eveniet debitis atque quibusdam. Sunt alias, mollitia autem earum ad animi quibusdam fugit ipsum nostrum soluta veritatis natus.<br>
+              <p class="amount">
+                 
+                ₹ 20,000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="office">
+      <h1 class="text-center"><span id="header-off">OFFICE</span></h1>
+    </section>
+  </body>
+  <script src="../Assets/Scripts/1-libraries/jquery2.min.js"></script>
+  <script src="../Assets/Scripts/1-libraries/jquery.countTo.js"></script>
+  <script src="../Assets/Scripts/1-libraries/bootstrap.min.js"></script>
+  <script src="../Assets/Scripts/1-libraries/Chart.min.js"></script>
+  <script src="../Assets/Scripts/1-libraries/slick.js"></script>
+  <script src="../Assets/Scripts/functions.js"></script>
+  <script src="../Assets/Scripts/lib-chart.js"></script>
+  <script src="../Assets/Scripts/lib-chart1.js"></script>
+  <script>$('.timer').countTo();</script>
+</html>

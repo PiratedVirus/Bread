@@ -1,0 +1,155 @@
+doctype html
+html
+        head
+                meta(charset='utf-8')
+                meta(http-equiv='X-UA-Compatible', content='IE=edge')
+                meta(name='viewport', content='width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no')
+                title Counting
+                link(rel="stylesheet", href="../Assets/Css/Base.css")
+                //- script(src="https://use.fontawesome.com/e9a633f963.js")
+        body
+                header
+                        .sec-nav
+                                    .container-fluid#nav-wide
+                                            nav.navbar.navbar-default
+
+                                                    .navbar-header
+                                                        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#col', aria-expanded='false')
+                                                            span.sr-only Toggle navigation
+                                                            span.icon-bar
+                                                            span.icon-bar
+                                                            span.icon-bar  
+
+                                                    a.navbar-brand(href='#') College
+                                                    #col.collapse.navbar-collapse
+                                                        ul.nav.navbar-nav.navbar-right#nav-sec
+                                                            li
+                                                                a.hvr-underline-from-center(href='#') Departments
+                                                            li
+                                                                a.hvr-underline-from-center(href='#about-us') About Us
+                                                            li
+                                                                a.hvr-underline-from-center(href='#contact-us') Contact Us
+                                                            li
+                                                                a.hvr-underline-from-center(href='#') Hire Us
+                                                            li
+                                                                a.hvr-underline-from-center(href='#') Buy Us
+                        
+                        h1.text-center
+                            span#header
+                                | Computer Rocks
+                section#charts
+                    .container-fluid
+                        .chart-holder
+                                .col-md-6.col-xs-12.chart-holder-right(style="width:350px")
+                                    .canvas-holder.text-center
+
+                                        canvas(id="cs-chart-right" width="40px" height="40px")
+
+                                        .canvas-per-right.timer(class="timer" data-from="0" data-to='57' data-speed="2000" data-refresh-interval="10")
+
+                                        .sub-caption-right.text-center
+                                            |  Lorem ipsum.
+
+                                .col-md-6.col-xs-12.chart-holder-left(style="width:350px")
+                                    .canvas-holder.text-center
+
+                                        canvas(id="cs-chart-left" width="40px" height="40px")
+                                        .canvas-per-left.timer(class="timer" data-from="0" data-to='85' data-speed="2000" data-refresh-interval="10")
+
+                                        .sub-caption-right.text-center
+                                            |  Lorem ipsum.
+
+                section#dep-staff.clearfix
+                    .container
+                        .sub-header
+                            |Staff
+                        .hod.col-md-4.col-xs-12.text-center
+                            img(src="../Assets/Img/user.jpg")
+                            .hod-name.text-center
+                                | Lorem Dolor
+                            .hod-post.text-center
+                                | HOD
+
+                        .prof.col-md-8.col-xs-12.text-center
+                            .prof-mem.text-center.col-xs-6.col-md-4
+                                b
+                                    |Lorem Iosum
+                                br
+                                |AB
+                            .prof-mem.text-center.col-xs-6.col-md-4
+                                b
+                                    |Lorem Iosum
+                                br
+                                |AB
+                            .prof-mem.text-center.col-xs-6.col-md-4
+                                b
+                                    |Lorem Iosum
+                                br
+                                |AB
+                            .prof-mem.text-center.col-xs-6.col-md-4
+                                b
+                                    |Lorem Iosum
+                                br
+                                |AB
+                            .prof-mem.text-center.col-xs-6.col-md-4
+                                b
+                                    |Lorem Iosum
+                                br
+                                |AB
+                            .prof-mem.text-center.col-xs-6.col-md-4
+                                b
+                                    |Lorem Iosum
+                                br
+                                |AB
+                
+                section#gallery
+                    .container
+                        .sub-header.text-center
+                            | Gallery
+                        .your-class
+                            div
+                                img(src='../Assets/Img/blur.jpg', height='350px', width='500px')
+                              |     
+                            div
+                                img(src='../Assets/Img/coding.jpg', height='350px', width='500px')
+                              |     
+                            div
+                                img(src='../Assets/Img/pagesource.jpg', height='350px', width='500px')
+                              |     
+                            div
+                                img(src='../Assets/Img/library.jpg', height='350px', width='500px') 
+                              |     
+                            div
+                                img(src='../Assets/Img/coding.jpg', height='350px', width='500px')
+                              |     
+                            div
+                                img(src='../Assets/Img/pagesource.jpg', height='350px', width='500px')
+                              |     
+                            div
+                                img(src='../Assets/Img/library.jpg', height='350px', width='500px')
+
+                      
+                footer
+                    .container
+                        .col-lg-5.col-xs-12
+                            .footer-head.text-left
+                                a(href="Bread.html") Lorem
+                            .footer-cr
+                                &copy; Copyright 2016
+                                br
+                                | All Rights Reserved.
+                        .col-lg-7.col-xs-12.text-left
+                            .footer-nav
+                                a.foot-nav(href="#") About
+                                a.foot-nav(href="#") Departments
+                                a.foot-nav(href="#") Contact 
+                                
+
+        script(src="../Assets/Scripts/1-libraries/jquery2.min.js")
+        script(src="../Assets/Scripts/1-libraries/jquery.countTo.js")
+        script(src="../Assets/Scripts/1-libraries/bootstrap.min.js")
+        script(src="../Assets/Scripts/1-libraries/Chart.min.js")
+        script(src="../Assets/Scripts/1-libraries/slick.js")
+        script(src="../Assets/Scripts/functions.js")
+        script
+            $('.timer').countTo();

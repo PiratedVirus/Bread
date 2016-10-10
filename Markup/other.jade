@@ -1,0 +1,113 @@
+doctype html
+html
+        head
+                meta(charset='utf-8')
+                meta(http-equiv='X-UA-Compatible', content='IE=edge')
+                meta(name='viewport', content='width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no')
+                title Counting
+                link(rel="stylesheet", href="../Assets/Css/Base.css")
+                //- script(src="https://use.fontawesome.com/e9a633f963.js")
+        body
+                header(style="background-image:url(../Assets/Img/bg_lib.png)")
+                        .sec-nav
+                                    .container-fluid#nav-wide
+                                            nav.navbar.navbar-default
+
+                                                    .navbar-header
+                                                        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#col', aria-expanded='false')
+                                                            span.sr-only Toggle navigation
+                                                            span.icon-bar
+                                                            span.icon-bar
+                                                            span.icon-bar  
+
+                                                    a.navbar-brand(href='#')(style="color:#fff") College
+                                                    #col.collapse.navbar-collapse
+                                                        ul.nav.navbar-nav.navbar-right#nav-sec
+                                                            li
+                                                                a.hvr-underline-from-center(href='#') Departments
+                                                            li
+                                                                a.hvr-underline-from-center(href='#about-us') About Us
+                                                            li
+                                                                a.hvr-underline-from-center(href='#contact-us') Contact Us
+                                                            li
+                                                                a.hvr-underline-from-center(href='#') Hire Us
+                                                            li
+                                                                a.hvr-underline-from-center(href='#') Buy Us
+                        
+                        h1.text-center
+                            span#lib(style="color:#fff")
+                                | Library
+
+                section#charts-lib
+                    .container-fluid.text-center
+                        .canvas-holder.col-xs-12
+                            canvas#myChart(height="400" width="400")
+                            .book-no.timer(class="timer" data-from="0" data-to='986' data-speed="2000" data-refresh-interval="10")
+                            .total.text-center
+                                | Total Books
+                                
+                    .container-fluid.text-center.lab
+                        //- .lab-head.text-left
+                            | Labs
+                        .tabs-hor.col-xs-12
+                              ul.nav.nav-tabs(role='tablist')
+                                li.active(role='presentation')
+                                  a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Home
+                                
+                                li(role='presentation')
+                                  a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Profile
+                                
+                                li(role='presentation')
+                                  a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') Messages
+                                
+                                li(role='presentation')
+                                  a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') Settings
+                              
+                              .tab-content
+                                #home.tab-pane.active(role='tabpanel')  Lorem ipsum dolor sit.
+                                    br
+                                    p.amount 
+                                        |₹ 20,000
+
+                                
+                                #profile.tab-pane(role='tabpanel')  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint, illum obcaecati exercitationem aspernatur qui officia autem, iste itaque tenetur, adipisci nobis debitis libero nihil! Ullam aliquam dolor repudiandae, neque. Enim quisquam eius ea.
+                                    br
+                                    p.amount 
+                                        |₹ 20,000
+                                #messages.tab-pane(role='tabpanel')  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsam iusto error.
+                                    br
+                                    p.amount 
+                                        |₹ 20,000
+                                #settings.tab-pane(role='tabpanel')  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi eius, ratione delectus ullam nam maxime odio veritatis ducimus eaque, alias voluptate et animi excepturi ab blanditiis error ipsam dolore deleniti beatae harum adipisci. Doloremque dolorum esse dolore, nostrum labore iusto incidunt rem dolores iste pariatur hic quae nihil eveniet debitis atque quibusdam. Sunt alias, mollitia autem earum ad animi quibusdam fugit ipsum nostrum soluta veritatis natus.
+                                    br
+                                    p.amount 
+                                        |₹ 20,000
+                        
+                
+
+                section#office
+                    h1.text-center
+                        span#header-off
+                            | OFFICE
+
+
+
+
+
+
+
+
+
+        script(src="../Assets/Scripts/1-libraries/jquery2.min.js")
+        script(src="../Assets/Scripts/1-libraries/jquery.countTo.js")
+        script(src="../Assets/Scripts/1-libraries/bootstrap.min.js")
+        script(src="../Assets/Scripts/1-libraries/Chart.min.js")
+        script(src="../Assets/Scripts/1-libraries/slick.js")
+        script(src="../Assets/Scripts/functions.js")
+        script(src="../Assets/Scripts/lib-chart.js")
+        script(src="../Assets/Scripts/lib-chart1.js")
+        script
+            $('.timer').countTo();
+
+
+ 

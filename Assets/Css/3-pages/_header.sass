@@ -1,0 +1,49 @@
+.bg-header
+	height: $bg-height
+	background:
+		image:url(../Img/building.jpg)
+		size: cover
+		position: center center
+		repeat: no-repeat
+
+.cointainer
+	height: $bg-height
+	+position(absolute,0 0 0 0)
+	background: rgba(#000,0.5)
+
+.text-wrap
+	display: table
+	width: 100%
+	position: relative
+	height: $bg-height
+.text-inner
+	display: table-cell
+	vertical-align: middle
+	text-align: center
+
+	h1
+		font-size: 50px
+		font-family:"Source Sans Pro"
+		color: #fff
+		margin: 0 0 20px 0
+
+	h2
+		font-size: 28px
+		line-height: 38px
+		font-weight: 300
+		color: rgba(255, 255, 255, 0.8)
+		margin: 0
+
+.slant
+		position: relative
+		transform: rotate(-1.7deg)
+		background-color: #fff
+		content: ""
+		z-index: 1
+		display: inline-block
+		height: 75px
+		top: 0
+		bottom: 0
+		padding: 0
+		margin-top: -25px
+		width: 101%

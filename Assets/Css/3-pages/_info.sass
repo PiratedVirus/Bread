@@ -1,0 +1,48 @@
+// icon and button color
+$icon: #52d3aa
+$hover: #777777
+
+
+#info
+	position: relative
+	bottom: 107px
+	z-index: 3
+	h2,p,.glyphicon
+		margin: 0px
+		padding: 0px
+	.col-md-4
+		background: #fff
+		padding: 40px
+		box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+		+transition
+		&:hover
+			background: $hover
+			h2,p,.glyphicon
+				color: #fff
+				font-weight: 300
+			.btn-custom
+				background: $hover
+				border: 2px solid #fff
+				color: #fff
+		.glyphicon
+			font-size: 60px
+			margin-bottom: 30px
+			display: block
+			color: $icon
+			+transition
+		h2
+			margin-bottom: 30px
+			font-weight: 200
+		p
+			margin-bottom: 24px
+			line-height: 24px
+			font-size: 16px
+			color: gray
+			font-weight: 100
+		.btn-custom
+			background: $icon
+			color: #fff
+			text-transform:uppercase
+			letter-spacing: 2px
+			line-height: 20px
+
